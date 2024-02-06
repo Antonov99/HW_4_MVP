@@ -11,11 +11,15 @@ namespace Lessons.Architecture.PM
         [Space]
         [SerializeField] private int _level; 
         [SerializeField] private int _exp;
+        [SerializeField] private string[] _statNames;
+        [SerializeField] private int[] _statValues;
 
         public Sprite Icon => _icon; 
         public string Nick => _nick; 
         public string Description => _description;   
         public int Level => _level;   
         public int Exp => _exp;
+        public string[] StatNames => _statNames;
+        public int[] StatValues => _statValues;
     }
 }

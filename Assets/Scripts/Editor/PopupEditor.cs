@@ -12,11 +12,11 @@ namespace Lessons.Architecture.PM.Editor
             {
                 base.OnInspectorGUI();
             
-                var lessonHelper = (PopupHelper) target;
+                var popupHelper = (PopupHelper) target;
             
                 if (GUILayout.Button("ShowPopup"))
                 {
-                    lessonHelper.ShowPopup();
+                    popupHelper.ShowPopup();
                 }
 
             }

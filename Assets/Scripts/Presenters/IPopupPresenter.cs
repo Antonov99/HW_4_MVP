@@ -1,5 +1,4 @@
 using UnityEngine;
-using UniRx;
 
 namespace Lessons.Architecture.PM
 {
@@ -8,8 +7,10 @@ namespace Lessons.Architecture.PM
         string Nick { get; }
         string Description { get; }
         Sprite Icon { get; }      
-        string Level { get; }
-        string Exp { get; }
-        IReadOnlyReactiveProperty<bool> CanLevelUp { get; }
+        int Level { get; }
+        int Exp { get; }
+        int ExpRequired { get; }
+        string[] StatNames { get; }
+        int[] StatValues { get; }
     }
 }

@@ -9,7 +9,7 @@ namespace Lessons.Architecture.PM
         public event Action<int> OnValueChanged; 
 
         [ShowInInspector, ReadOnly]
-        public string Name { get; private set; }
+        public string Name { get;  set; }
 
         [ShowInInspector, ReadOnly]
         public int Value { get; private set; }
