@@ -19,4 +19,5 @@ MonoBehaviour:
   _exp: 50
   _statNames:
   - Move Speed
-  _statValues: 14000000
+  - "\u043A\u0440\u0443\u0442\u043E\u0439"
+  _statValues: 090300009a020000

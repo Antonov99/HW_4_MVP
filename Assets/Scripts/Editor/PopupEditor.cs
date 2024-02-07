@@ -18,7 +18,35 @@ namespace Lessons.Architecture.PM.Editor
                 {
                     popupHelper.ShowPopup();
                 }
-
+                
+                if (GUILayout.Button("Add exp"))
+                {
+                    popupHelper.AddExp();
+                }
+                if (GUILayout.Button("Rename"))
+                {
+                    popupHelper.Rename();
+                }
+                if (GUILayout.Button("Change Description"))
+                {
+                    popupHelper.ChangeDescription();
+                }
+                if (GUILayout.Button("Change Icon"))
+                {
+                    popupHelper.ChangeIcon();
+                }
+                if (GUILayout.Button("RemoveStat"))
+                {
+                    popupHelper.RemoveStat();
+                }
+                if (GUILayout.Button("AddStat"))
+                {
+                    popupHelper.AddStat();
+                }
+                if (GUILayout.Button("ChangeStatValue"))
+                {
+                    popupHelper.ChangeStatValue();
+                }
             }
         }
 

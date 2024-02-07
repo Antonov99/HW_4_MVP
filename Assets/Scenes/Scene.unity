@@ -323,6 +323,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterPopup: {fileID: 132639138}
   _popupInfo: {fileID: 11400000, guid: 85e1a8553f312c84994d63bfc0136047, type: 2}
+  newName: Lalalala
+  newDescription: Bababab
+  newIcon: {fileID: 21300000, guid: 7c0892898786946a98a1057c9873611a, type: 3}
+  expToAdd: 100
+  nameToAdd: bb
+  valueToAdd: 5
+  nameToRemove: "\u043A\u0440\u0443\u0442\u043E\u0439"
+  nameToChange: 
+  valueToChange: 0
 --- !u!1 &401211084
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,6 +494,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1069971009 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7309535005407246368, guid: 05be7072bc448544893b73b34fd035f8, type: 3}
+  m_PrefabInstance: {fileID: 2130871408}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1502192415
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,5 +859,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8008404695813165855, guid: 05be7072bc448544893b73b34fd035f8, type: 3}
+      propertyPath: _levelUpButton
+      value: 
+      objectReference: {fileID: 1069971009}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05be7072bc448544893b73b34fd035f8, type: 3}

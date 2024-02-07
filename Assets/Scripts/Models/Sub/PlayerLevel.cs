@@ -5,7 +5,7 @@ namespace Lessons.Architecture.PM
 {
     public sealed class PlayerLevel
     {
-        public event Action OnLevelUp;
+        public event Action<int> OnLevelUp;
         public event Action<int> OnExperienceChanged;
 
         [ShowInInspector, ReadOnly]
@@ -35,7 +35,7 @@ namespace Lessons.Architecture.PM
             {
                 this.CurrentExperience = 0;
                 this.CurrentLevel++;
-                this.OnLevelUp?.Invoke();
+                this.OnLevelUp?.Invoke(CurrentLevel);
             }
         }
 
