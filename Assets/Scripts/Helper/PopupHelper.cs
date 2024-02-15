@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 using Zenject;
 
 namespace Lessons.Architecture.PM
 {
     public sealed class PopupHelper : MonoBehaviour
     {
-        [SerializeField] private CharacterPopup _characterPopup;
+        [FormerlySerializedAs("_characterPopup")] [SerializeField] private CharacterPopupView characterPopupView;
+        [SerializeField] private StatsView _statsView;
+        [SerializeField] private UserView _userView;
+        
         [SerializeField] private PopupInfo _popupInfo;
         
         private PopupModel _popupModel;
@@ -32,8 +36,13 @@ namespace Lessons.Architecture.PM
 
         public void ShowPopup()
         {
-            var popupPresenter = _popupPresenterFactory.Create(_popupModel.UserInfo, _popupModel.PlayerLevel, _popupModel.CharacterInfo);
-            _characterPopup.Show(popupPresenter);
+            var popupPresenter = _popupPresenterFactory.CreatePopupPresenter();
+            var userPresenter = _popupPresenterFactory.CreateUserPresenter(_popupModel.UserInfo, _popupModel.PlayerLevel);
+            var statsPresenter = _popupPresenterFactory.CreateStatsPresenter(_popupModel.CharacterInfo);
+            
+            characterPopupView.Show(popupPresenter);
+            _userView.Show(userPresenter);
+            _statsView.Show(statsPresenter);
         }
 
         public void AddExp()

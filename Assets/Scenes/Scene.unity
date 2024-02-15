@@ -123,22 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!224 &132639137 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7309535006990615991, guid: 05be7072bc448544893b73b34fd035f8, type: 3}
-  m_PrefabInstance: {fileID: 2130871408}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &132639138 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8008404695813165855, guid: 05be7072bc448544893b73b34fd035f8, type: 3}
-  m_PrefabInstance: {fileID: 2130871408}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3796ce93315b4ec181164e77cb99eeab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &273204965
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,7 +284,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 132639137}
+  - {fileID: 1871305981}
   m_Father: {fileID: 1875381015}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -321,7 +305,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23dcd2b7bcac4a0ba72e87835bfaee5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterPopup: {fileID: 132639138}
+  characterPopupView: {fileID: 1871305983}
+  _statsView: {fileID: 1871305982}
+  _userView: {fileID: 1871305984}
   _popupInfo: {fileID: 11400000, guid: 85e1a8553f312c84994d63bfc0136047, type: 2}
   newName: Lalalala
   newDescription: Bababab
@@ -494,17 +480,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1069971009 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7309535005407246368, guid: 05be7072bc448544893b73b34fd035f8, type: 3}
-  m_PrefabInstance: {fileID: 2130871408}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1502192415
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,6 +564,44 @@ Transform:
   m_Father: {fileID: 624736629}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &1871305981 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7309535006990615991, guid: 05be7072bc448544893b73b34fd035f8, type: 3}
+  m_PrefabInstance: {fileID: 2101627752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1871305982 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 633327349073617514, guid: 05be7072bc448544893b73b34fd035f8, type: 3}
+  m_PrefabInstance: {fileID: 2101627752}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1731fa742986421fb28b3b718a7549f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1871305983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8008404695813165855, guid: 05be7072bc448544893b73b34fd035f8, type: 3}
+  m_PrefabInstance: {fileID: 2101627752}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3796ce93315b4ec181164e77cb99eeab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1871305984 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1329390834833899537, guid: 05be7072bc448544893b73b34fd035f8, type: 3}
+  m_PrefabInstance: {fileID: 2101627752}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e4e5cd6c5d4794bffc4f9116b384a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1875381014
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,7 +773,7 @@ Transform:
   m_Father: {fileID: 624736629}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &2130871408
+--- !u!1001 &2101627752
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -859,9 +872,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8008404695813165855, guid: 05be7072bc448544893b73b34fd035f8, type: 3}
-      propertyPath: _levelUpButton
-      value: 
-      objectReference: {fileID: 1069971009}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05be7072bc448544893b73b34fd035f8, type: 3}

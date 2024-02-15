@@ -2590,6 +2590,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7309535006990615991}
   - component: {fileID: 8008404695813165855}
+  - component: {fileID: 633327349073617514}
+  - component: {fileID: 1329390834833899537}
   m_Layer: 5
   m_Name: HeroPopup
   m_TagString: Untagged
@@ -2630,11 +2632,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3796ce93315b4ec181164e77cb99eeab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _title: {fileID: 7309535006161039082}
-  _description: {fileID: 7309535005470608942}
-  _icon: {fileID: 7309535006881718509}
-  _level: {fileID: 7309535005472161237}
-  _exp: {fileID: 7309535006973429545}
+  _closeButton: {fileID: 7309535005724263585}
+--- !u!114 &633327349073617514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7309535006990615988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1731fa742986421fb28b3b718a7549f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _statTexts:
   - {fileID: 7309535005237745990}
   - {fileID: 7309535006184383081}
@@ -2649,8 +2659,24 @@ MonoBehaviour:
   - {fileID: 2345788198655634268}
   - {fileID: 1752479240031259335}
   - {fileID: 1859876250188076101}
+--- !u!114 &1329390834833899537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7309535006990615988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e4e5cd6c5d4794bffc4f9116b384a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _title: {fileID: 7309535006161039082}
+  _description: {fileID: 7309535005470608942}
+  _icon: {fileID: 7309535006881718509}
+  _level: {fileID: 7309535005472161237}
+  _exp: {fileID: 7309535006973429545}
   _levelUpButton: {fileID: 7309535005407246368}
-  _closeButton: {fileID: 7309535005724263585}
   _disabledButton: {fileID: 21300000, guid: 9ef0c11205b6f41a88353f491a8396d1, type: 3}
   _enabledButton: {fileID: 21300000, guid: cf4c106fc0fd9489580b9e716e4eed17, type: 3}
 --- !u!1 &7309535006993861112

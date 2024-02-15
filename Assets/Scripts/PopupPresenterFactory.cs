@@ -2,9 +2,19 @@ namespace Lessons.Architecture.PM
 {
     public sealed class PopupPresenterFactory
     {
-        public IPopupPresenter Create(UserInfo userInfo, PlayerLevel playerLevel, CharacterInfo characterInfo)
+        public IPopupPresenter CreatePopupPresenter()
         {
-            return new PopupPresenter(userInfo,playerLevel,characterInfo);
+            return new PopupPresenter();
+        }
+
+        public IUserPresenter CreateUserPresenter(UserInfo userInfo, PlayerLevel playerLevel)
+        {
+            return new UserPresenter(userInfo, playerLevel);
+        }
+
+        public IStatsPresenter CreateStatsPresenter(CharacterInfo characterInfo)
+        {
+            return new StatsPresenter(characterInfo);
         }
     }
 }
